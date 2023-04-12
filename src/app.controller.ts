@@ -5,7 +5,8 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('users')
+  //?Todo: Don't have routes with the same name.
+  @Get('userss')
   getUsers(): string[] {
     return this.appService.getUsers();
   }
